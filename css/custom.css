@@ -1,0 +1,86 @@
+@font-face {
+	font-family: batman;
+	src:url("");
+	font-weight: bold;
+}
+#scroll-magic.topCenter{
+  position:fixed;
+  top:5%;
+  text-align:center;
+  width:100%;
+  font-family: batman;
+}
+
+#scoll-magic.letters span{
+  color:#fff;
+  display:inline-block;
+  letter-spacing:.3em;
+  transition:.2s;
+}
+
+#scroll-magic.letters span.focus{
+  color:red;
+  transform:scale(1.5);
+}
+
+#scroll-magic.letters span.focus + span, .letters.minusOne > span:first-child{
+  color:cyan;
+  transform:scale(2) translateY(-0.3em);
+}
+
+#scroll-magic.letters span.focus + span + span, .letters.minusTwo > span:first-child,.letters.minusOne > span:nth-child(2){
+  color:yellow;
+  transform:scale(1.5);
+}
+.letters span{
+  color:#333;
+  display:inline-block;
+  letter-spacing:.1em;
+  transition:.8s;
+  font-size:1.5em;
+  filter:blur(4px);
+  text-shadow: 3px -3px 2px rgba(147, 150, 150, 0.59);
+}
+
+.letters span.focus, .letters span.focus + span, .letters.minusOne > span:first-child, .letters span.focus + span + span, .letters.minusTwo > span:first-child,.letters.minusOne > span:nth-child(2){
+  color:#fff;
+  filter:blur(0);
+}
+#gallery{
+    margin: 0px;
+    padding: 0px;
+}
+#gallery > h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+}
+#gallery > img {
+    height: 270px;
+    width: 400px;
+    margin: 10px;
+    padding:2px;
+    border:1px solid blue;
+    border-style: hidden;
+}
+#gallery >img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
