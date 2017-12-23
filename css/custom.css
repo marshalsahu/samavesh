@@ -1,20 +1,26 @@
-@font-face {
-	font-family: batman;
-	src:url("");
-	font-weight: bold;
+@font-face{
+    font-family: "Batman";
+    src: url("../fonts/batman/batmfa__.woff")format("woff");
+    font-weight:normal;
+    font-style:normal;
+        
+}
+#scroll-magic{
+    top: -40px;
 }
 #scroll-magic.topCenter{
   position:fixed;
-  top:5%;
+ 
   text-align:center;
   width:100%;
-  font-family: batman;
+  font-family: "Batman" sans-serif;
 }
 
 #scoll-magic.letters span{
   color:#fff;
   display:inline-block;
   letter-spacing:.3em;
+  font-family: Batman;
   transition:.2s;
 }
 
@@ -84,3 +90,4 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+

@@ -1,7 +1,6 @@
 /* =================================================================== 
  *
- *  Infinity v1.0 Main Stylesheet
- *  01-02-2017
+
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -33,7 +32,19 @@
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 @import url("fonts.css");
-
+@font-face{
+    font-family: "Batman";
+    src: url("../fonts/batman/batmfa__.woff")format("woff");
+    font-weight:normal;
+    font-style:normal;
+        
+}
+@font-face{
+    font-family: "coalition";
+    src: url("../fonts/batman/Coalition_v2.woff")format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
 
 /* ===================================================================
  *  02. base style overrides - (_document-setup)
@@ -64,7 +75,7 @@ html, body {
 
 body {
   background: #111111;
-  font-family: "librebaskerville-regular", serif;
+  font-family: "Batman", serif;
   font-size: 1.6rem;
   line-height: 3rem;
   color: #353535;
@@ -95,7 +106,7 @@ a:hover, a:focus {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6,
 .h01, .h02, .h03, .h04, .h05, .h06 {
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Batman", sans-serif;
   color: #151515;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -1509,7 +1520,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/mandelbulb-1352250_960_720.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1544,11 +1555,11 @@ header .header-logo a {
 }
 .home-content-tablecell .row {
   position: relative;
-  padding-top: 16.2rem;
+  padding-top: -30px;
   padding-bottom: 15rem;
 }
 .home-content-tablecell h3 {
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Batman", sans-serif;
   font-size: 2.2rem;
   color: white;
   text-transform: uppercase;
@@ -1556,7 +1567,7 @@ header .header-logo a {
   margin: 0 0 .9rem 0;
 }
 .home-content-tablecell h1 {
-  font-family: "montserrat-bold", serif;
+  font-family: "batman", serif;
   font-size: 9rem;
   line-height: 1.133;
   color: #FFFFFF;
@@ -1789,24 +1800,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #07617d;
 }
 #about h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
+  font-family: "Batman", sans-serif;
+  font-size: 4rem;
   line-height: 1.667;
   color: #07617d;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
 }
-#about h3::before {
-  display: block;
-  content: "";
-  width: 3px;
-  height: 9.6rem;
-  background-color: rgba(149, 149, 149, 0.7);
-  margin: 0 auto 2.4rem;
-}
+
 #about .lead {
-  font-family: "librebaskerville-bold", serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 4rem;
   line-height: 1.8;
   color: #2e383f;
@@ -2464,6 +2468,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
+}
+#about h3 {
+  font-family: "Batman", sans-serif;
+  font-size: 4rem;
+  line-height: 1.667;
+  color: #07617d;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
 }
 #clients .owl-carousel .owl-nav [class*='owl-']:hover {
   background: rgba(0, 0, 0, 0.7);
