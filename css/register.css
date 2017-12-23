@@ -1,4 +1,6 @@
-
+body{
+    background-image: url("../images/back2.jpg");
+}
 #custom-bootstrap-menu.navbar-default .navbar-brand
 {
     color: rgb(255, 255, 255);
@@ -164,3 +166,9 @@ input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-co
 }
 input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #999999; }
 input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #999999; }
+#visitor{
+    -webkit-box-shadow: -58px -20px 36px -6px rgba(61,172,191,0.81);
+-moz-box-shadow: -58px -20px 36px -6px rgba(61,172,191,0.81);
+box-shadow: -58px -20px 36px -6px rgba(61,172,191,0.81);
+    opacity: 0.8;
+}
