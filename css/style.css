@@ -17,7 +17,7 @@ canvas {
 }
 
 #bg {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -27,10 +27,8 @@ canvas {
 
 section {
   margin: auto;
-  position: absolute;
+  position: relative;
   transform: translateY(-50%);
-  top: 35%;
-  width: 100%;
   text-align: center;
 }
 section .text {
@@ -58,13 +56,14 @@ body {font-family: "Batman", sans-serif;}
 /* Style the tab */
  .overlay{
      display:block;
-     height: 30%;
      width: 100%;
      margin:0px;
      padding:0px;
+     top: 200px;
     }
     .overlay > .samavesh {
         position: relative;
+        margin-top: 30px;
     }
     .samavesh > h1{
         font-family:"Batman", sans-serif;
@@ -81,8 +80,17 @@ body {font-family: "Batman", sans-serif;}
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 25%;
-    top:25%;
-    height: 300px;
+    top:35%;
+    height: auto;
+ -webkit-box-shadow: -17px -9px 23px -2px rgba(219,212,247,1);
+-moz-box-shadow: -17px -9px 23px -2px rgba(219,212,247,1);
+box-shadow: -17px -9px 23px -2px rgba(219,212,247,1);
+}
+.tab:after{
+    content:"";
+    clear:both;
+    display:block;
+    
 }
 
 /* Style the buttons inside the tab */
@@ -92,6 +100,8 @@ body {font-family: "Batman", sans-serif;}
     color: black;
     padding: 22px 16px;
     width: 100%;
+    border-radius:5px;
+    margin:1px;
     border: none;
     outline: none;
     text-align: left;
@@ -117,6 +127,7 @@ body {font-family: "Batman", sans-serif;}
     width: 70%;
     border-left: none;
     height: 70%;
+    bottom: 10%;
 }
     .tabcontent > h3{
         text-align: center;
@@ -135,4 +146,20 @@ body {font-family: "Batman", sans-serif;}
         font-size: 20px;
         color:#fff;
     }
-
+.about-border {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #f1cd8f;
+    margin: 20px auto;
+}
+.overlay> .heading{
+    display:block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom:0px;
+}
+.heading > h2{
+    font-size:30px !important;
+    font-family: "Batman","helvatica",sans-serif;
+}

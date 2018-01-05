@@ -1,0 +1,48 @@
+.fg-body {
+  position: relative;
+    left:10%;
+}
+
+body {
+  -webkit-transform-style: preserve-3d;
+   -webkit-backface-visibility: hidden;
+}
+.fg-card {
+  position:absolute;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  display: block;
+  border: 1px solid #3878bd;
+
+}
+
+.fg-card.animate {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.fg-card.active {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.fg-card img{
+  display: block;
+  width: 550px;
+  height: 400px;
+}
+
+.fg-card.fg-flipping {
+  -o-transform: rotateX(180deg) !important;
+  -webkit-transform: rotateX(180deg) !important;
+  -moz-transform: rotateX(180deg) !important;
+  transform: rotateX(180deg) !important;
+  opacity: 0;
+}
+

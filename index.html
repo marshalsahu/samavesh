@@ -9,7 +9,8 @@
    <meta charset="utf-8">
 	<title>Samavesh2k18</title>
 	<meta name="description" content="VSSUT Technical Festival, ">  
-	<meta name="author" content="">
+	<meta name="author" content="Marshal Sahu">
+    <meta name="keywords" content="Samavesh, Vssut Technical festival, vssut techfest">
 
    <!-- mobile specific metas
    ================================================== -->
@@ -18,19 +19,16 @@
  	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/flipclock.css">
    <link rel="stylesheet" href="css/vendor.css">  
    <link rel="stylesheet" href="css/main.css">  
    <link rel="stylesheet" href="css/custom.css">
    <!-- script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+    <script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
    
-
-   <!-- favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+   
 
 </head>
 
@@ -57,10 +55,14 @@
 			<ul class="nav-list">
 				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
 				<li><a class="smoothscroll" href="#about" title="">About</a></li>
-				<li><a  href="techexpo.html" title="">TechExpo</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Our Members</a></li>
-				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-                <li><a href="register.htm" title="registration">Register </a></li>
+				<li><a  href="techexpo.html" title="">TechClubs</a></li>
+				
+                 <li><a href="organization.html" >Organization </a></li>
+                <li><a href="Gallery.html" title="registration">Gallery </a></li>
+                 <li><a href="media.html" >Media </a></li>
+                 <li><a  href="Sponsors.html" >Our Sponsors</a></li>
+                 <li><a href="register.htm" title="registration">Register </a></li>
+                <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
 			</ul>	
 
 			
@@ -89,6 +91,7 @@
    <!-- home
    ================================================== -->
    <section id="home">
+    
 
    	<div class="overlay"></div>
 
@@ -97,63 +100,31 @@
 		   	<div class="row">
 		   		<div class="col-twelve">		   			
 			  		
-			  				
-					      <div id="scroll-magic">
-					       <h1 class="topcenter letters" style>SAMAVESH</h1>
-						   </div>
-                    <script>
-                    
-                    
-   window.addEventListener("load", function(event) {
-  var texts = document.getElementsByClassName("letters");
-  var numOfTexts = texts.length;
-  var letterPositions = [];
-  for (var i = 0; i < numOfTexts; i++) {
-    letterPositions.push(0);
-    var letters = texts[i].innerText.replace(
-      new RegExp("", "gi"),
-      "</span><span>"
-    );
-
-    texts[i].innerHTML = letters.substring(7, letters.length - 6);
-  }
-
-  setInterval(function() {
-    for (var i = 0; i < numOfTexts; i++) {
-      var j = letterPositions[i];
-      if (j >= 0) {
-        texts[i].childNodes[j].classList.add("focus");
-        if (j == 0) {
-          texts[i].classList.remove("minusOne");
-          texts[i].childNodes[texts[i].childNodes.length - 1].classList.remove(
-            "focus"
-          );
-        } else texts[i].childNodes[j - 1].classList.remove("focus");
-      }
-
-      if (j == texts[i].childNodes.length - 2) {
-        texts[i].classList.add("minusTwo");
-      } else if (j == texts[i].childNodes.length - 1) {
-        texts[i].classList.add("minusOne");
-        texts[i].classList.remove("minusTwo");
-      }
-
-      letterPositions[i] = ++letterPositions[i] % texts[i].childNodes.length;
-    }
-  }, 200 /*200 for light in night and smoke,100 for jumping colors*/);
-});
-
-                    
-                    </script>
-					
-				  
-							
-
+               <div class="textanimation">
+             <h1 class="longshadow jump">SAMAVESH</h1>
+                   </div>
 			  		</div> <!-- end col-twelve --> 
-		   	</div> <!-- end row --> 
-		   </div> <!-- end home-content-tablecell --> 		   
-		</div> <!-- end home-content-table -->
+		   	</div>
+               <!-- end row -->
+               <div class="row">
+                   
+                   
+                   <div class="clock" style="margin:2em;"></div>
 
+                   
+                   </div>
+               
+               </div>
+		   </div> <!-- end home-content-tablecell --> 		   
+       <!-- end home-content-table -->
+       <script>
+           const heading = document.querySelector('.jump');
+        heading.innerHTML = sparanWrap(heading.textContent);
+
+        function sparanWrap(word) {
+            return [...word].map(letter => `<span>${letter}</span>`).join('');
+        }
+       </script>
 		<ul class="home-social-list">
 	      <li class="animate-intro">
 	        	<a href="#"><i class="fa fa-facebook-square"></i></a>
@@ -191,8 +162,8 @@
 
 				<div class="intro">
 					<h3 class="animate-this">About Us</h3>
-	   			<p sytle='font-style:"Comic Sans MS", cursive, sans-serif;' ><span>Samavesh</span> or the <span>Devanagari </span>meaning of "Confluence of Ignited minds" is the Annual Techno-Management fest of Veer Surendra Sai University of Technolory,Burla. Ever since its inception Samavesh has lived oupto its name of being the largest technical gathering in the state. Samavesh witnesses huge gathering of technocrats, business moguls,industry experts, scientistss and students who expressed keen interest in technology.</p>	
-                <p style='font-style:"Comic Sans MS", cursive, sans-serif'>Science Fiction or popularly known as <em>Sci-fi</em> is the central theme of this year's fest which is testimony to the fact that what may be ignored as a fiction may be tomorrow's biggest creation. To replicate its wonder is the very thought of this year's fest and would prove exhilarating yet challenging for our next generation.</p>
+	   			<p sytle='font-style:"Comic Sans MS", cursive, sans-serif; !important' ><span>Samavesh</span> or the <span>Devanagari </span>meaning of "Confluence of Ignited minds" is the Annual Techno-Management fest of Veer Surendra Sai University of Technolory,Burla. Ever since its inception Samavesh has lived oupto its name of being the largest technical gathering in the state. Samavesh witnesses huge gathering of technocrats, business moguls,industry experts, scientistss and students who expressed keen interest in technology.</p>	
+                <p style='font-style:"Comic Sans MS", cursive, sans-serif !important'>Science Fiction or popularly known as <em>Sci-fi</em> is the central theme of this year's fest which is testimony to the fact that what may be ignored as a fiction may be tomorrow's biggest creation. To replicate its wonder is the very thought of this year's fest and would prove exhilarating yet challenging for our next generation.</p>
 				</div>   
 
    		</div> <!-- end col-full  -->
@@ -202,31 +173,6 @@
  
 	<!--services
    ================================================ -->
-    <section id="gallery">
-    
-
-            <h2 >Gallery</h2>
-            <img src="images/samav/1.jpg">
-             <img src="images/samav/2.jpg">
-              <img src="images/samav/3.jpg">
-              <img src="images/samav/4.jpg">
-             <img src="images/samav/5.jpg">
-           <img src="images/samav/6.jpg">
-              <img src="images/samav/20.jpg">
-             <img src="images/samav/8.jpg">
-          <img src="images/samav/11.jpg">
-          <img src="images/samav/13.jpg">
-          <img src="images/samav/14.jpg">
-          <img src="images/samav/15.jpg">
-          <img src="images/samav/16.jpg">
-          <img src="images/samav/17.jpg">
-          <img src="images/samav/18.jpg">
-          <img src="images/samav/19.jpg">
-          <img src="images/samav/20.jpg">
-          <img src="images/samav/21.jpg">
-    </section>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 	<!-- contact
@@ -364,11 +310,15 @@
 
    <!-- Java Script
    ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
+   
+    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
+    <script src="js/flipclock.js"></script>
    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+     
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
 </body>
 

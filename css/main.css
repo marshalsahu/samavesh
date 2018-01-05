@@ -1519,14 +1519,14 @@ header .header-logo a {
 #home {
   width: 100%;
   height: 100%;
-  background-color: #151515;
-  background-image: url(../images/samaves.jpg);
-  background-repeat: no-repeat;
-  background-position: center 30%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
+  background: rgba(130,184,201,1);
+background: -moz-linear-gradient(left, rgba(130,184,201,1) 0%, rgba(107,168,189,1) 41%, rgba(40,93,154,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(130,184,201,1)), color-stop(41%, rgba(107,168,189,1)), color-stop(100%, rgba(40,93,154,1)));
+background: -webkit-linear-gradient(left, rgba(130,184,201,1) 0%, rgba(107,168,189,1) 41%, rgba(40,93,154,1) 100%);
+background: -o-linear-gradient(left, rgba(130,184,201,1) 0%, rgba(107,168,189,1) 41%, rgba(40,93,154,1) 100%);
+background: -ms-linear-gradient(left, rgba(130,184,201,1) 0%, rgba(107,168,189,1) 41%, rgba(40,93,154,1) 100%);
+background: linear-gradient(to right, rgba(130,184,201,1) 0%, rgba(107,168,189,1) 41%, rgba(40,93,154,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82b8c9', endColorstr='#285d9a', GradientType=1 );
   min-height: 804px;
   position: relative;
 }
@@ -1543,13 +1543,13 @@ header .header-logo a {
 .home-content-table {
   width: 100%;
   height: 100%;
-  display: table;
+  display: inline-block;
   position: relative;
   text-align: center;
 }
 
 .home-content-tablecell {
-  display: table-cell;
+  display: grid;
   vertical-align: middle;
   z-index: 500;
 }
@@ -2527,7 +2527,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  padding: 12rem 0 12rem;
+  padding: 4rem;
   position: relative;
 }
 #contact .overlay {
@@ -2544,6 +2544,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #contact .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
+  font-family:"Batman";
+   font-size: 40px;
 }
 #contact .section-intro p.lead {
   color: rgba(242, 242, 242, 0.4);
